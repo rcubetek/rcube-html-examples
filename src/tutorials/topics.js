@@ -96,6 +96,9 @@ export const topics = [
   { slug: "custom-components", group: "Advanced", title: "Custom components",
     summary: "Add your own React component and use it in schemas by name.",
     keywords: "registerComponent custom component container field renderNodes" },
+  { slug: "websites", group: "Advanced", title: "Websites & pre-rendering",
+    summary: "Whole static websites from data: regions, the render modes server / static / client, mixing them, and drawing pages ahead of time with rcube-html render.",
+    keywords: "website static site pages regions data-rcube-region rcube-site.js RcubeSite.site RcubeSite.page data folder El Message ClientOnly render server static client hydrate hydration pre-render prerender ssr ssg seo search engines noscript placeholder conditional render env lang rcube-html render cli command npx renderPage rcube-html/server publish ftp hosting firebase check mode" },
 ];
 
 export const topicBySlug = (slug) => topics.find((t) => t.slug === slug) || null;

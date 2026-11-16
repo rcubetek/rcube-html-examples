@@ -182,5 +182,11 @@ export const examples = [
     "group": "Advanced",
     "title": "Custom components",
     "summary": "Add your own React component and use it in schemas by name."
+  },
+  {
+    "slug": "websites",
+    "group": "Advanced",
+    "title": "Websites & pre-rendering",
+    "summary": "Whole static websites from data: regions, the render modes server / static / client, mixing them, and drawing pages ahead of time with rcube-html render."
   }
 ];

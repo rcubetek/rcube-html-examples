@@ -8,6 +8,7 @@
 //                     src/app/examples/<slug>.component.ts, src/app/my-page.component.ts
 //   starter-vue/      package.json, src/examples.js, src/examples/<Name>.vue, src/MyPage.vue
 //   starter-html/     index.html, examples/<slug>.html, my-page.html, rcube-html/*.js (the library's <script> files)
+//   starter-site/     rcube-html/ only (rcube-html.js, rcube-site.js, styles.css); its pages and data are hand-written
 //   starter-jsp/      src/main/webapp/: index.jsp, examples/<slug>.jsp, my-page.jsp, WEB-INF/schemas/<slug>.json,
 //                     WEB-INF/tags/rcube/rcube-form.tag (from rcube-html), static/rcube-html/*.js
 import { copyFileSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
@@ -142,6 +143,15 @@ ${usedGroups.map((g) => `    <h2 style="font-size: 1.1rem; margin-top: 1.5rem">$
 </html>
 `);
   write("starter-html", files, ["examples", "rcube-html"]);
+}
+
+// ---------------------------------------------------------------- a website from data (starter-site/: hand-written pages and data;
+// only the library's files are copied in: rcube-html.js, rcube-site.js, styles.css)
+{
+  const files = new Map();
+  for (const file of ["rcube-html.js", "rcube-site.js"]) files.set(`rcube-html/${file}`, copy(`dist/browser/${file}`));
+  files.set("rcube-html/styles.css", copy("dist/styles.css"));
+  write("starter-site", files, ["rcube-html"]);
 }
 
 // ---------------------------------------------------------------- JSP (Maven web app)

@@ -139,7 +139,7 @@ el.api.setFormData({ email: "a@b.co" });`,
     {
       heading: "Node servers: the form drawn first",
       body: [
-        "`renderFormHtml()` from `rcube-html/server` returns the element, its JSON and the form already drawn, so the page shows it before the script runs. When the script starts, the live form replaces the drawn one (text typed in between isn't kept).",
+        "`renderFormHtml()` from `rcube-html/server` returns the element, its JSON and the form already drawn, so the page shows it before the script runs. When the script starts, the live form replaces the drawn one (text typed in between isn't kept). With `{ hydrate: true }` the browser **takes the drawn form over** instead (React hydration: no flash). For whole pages drawn ahead of time — server, static and client parts — see **Websites & pre-rendering**.",
       ],
       code: `import { renderFormHtml } from "rcube-html/server";
 
@@ -191,7 +191,8 @@ save: () => {
     ["schema-src", "Attribute: a URL with the schema (a list) or a config `{ schema, buttons, values, … }`."],
     ["el.api", "Every form action: `setFormData`, `getFormEntries`, `runValidation`, `setNodeProps`, `hideNode`, …"],
     ["mount(target, options)", "Plain JavaScript: a form in `target`; options plus `onSubmit`, `onChange`, `onAction`, `onReady`."],
-    ["renderFormHtml(options, { attributes, prerender })", "Node: the element as HTML, with its JSON and the form drawn."],
+    ["renderFormHtml(options, { attributes, prerender, hydrate })", "Node: the element as HTML, with its JSON and the form drawn; `hydrate` — taken over in the browser."],
+    ["renderPage(html, { site, page, facts, mode })", "Node: a whole page's regions drawn as their `render` says (see Websites & pre-rendering)."],
   ],
   events: [
     ["rcube-ready", "The form is on the page.", "`{ api }`"],

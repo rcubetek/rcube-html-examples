@@ -36,6 +36,7 @@ One starter per kind of app, each with every example on its own page plus `My pa
 | [starter-vue/](starter-vue/) | Vue 3 (Vite) | Node.js 20.19+ or 22.12+ | `npm install`, `npm run dev` → http://localhost:5173 |
 | [starter-html/](starter-html/) | plain HTML / JavaScript (any server page) | a browser | open `index.html` |
 | [starter-jsp/](starter-jsp/) | JSP (Maven web app) | Java 17+, Maven | `mvn jetty:run` → http://localhost:8080 |
+| [starter-site/](starter-site/) | a whole static website from data (regions; render modes server / static / client) | a browser (Node.js only to render ahead of time) | open `index.html`; `npx rcube-html render .` |
 
 Get one in one of these ways — none needs a file download, so they also work on work computers that block
 downloads. Write the starter's folder instead of `starter` for the others:
@@ -97,6 +98,10 @@ example's code for Angular, Vue, HTML and JSP — the same code as the site's "C
 example lists, the library's `<script>` files (HTML, JSP), the Angular component and the JSP tag (from rcube-html). The
 config files, home pages and READMEs are hand-written. Commit the starters after changing a tutorial.
 
+`starter-site/` is hand-written (its pages, `data/`, `assets/`); the script only copies rcube-html's `rcube-html.js`,
+`rcube-site.js` and `styles.css` into `starter-site/rcube-html/`. Its source pages are left unrendered (they're drawn
+in the browser); its README shows `npx rcube-html render .`.
+
 `npm run check:frameworks` runs every tutorial's HTML and JSP page in jsdom (the form must appear with no errors).
 Each starter's own build checks the rest: `ng build` (Angular), `vite build` (Vue), `mvn package -Pcheck` (compiles
 every JSP).
@@ -141,7 +146,7 @@ Uses Next.js 16 (App Router), React 19.3, React-Bootstrap 2.10 and Bootstrap 5.3
 | Form fields | Input fields, Selects & dependent selects, Radios / checkboxes / slider / textarea, Validation & submit, Conditional fields, Read & set values, Rich text editor, Repeatable entries |
 | Containers | Cards / alerts / tooltips / popovers, Tabs & accordion, Modal & carousel |
 | Data components | Data table, Server paging, Remembered views & the chosen row, Editable table & row actions, Charts, Calendar, File upload (drag & drop), Tree, File explorer (lazy loading) |
-| Advanced | Languages, Custom components |
+| Advanced | Languages, Custom components, Websites & pre-rendering |
 
 ## Adding a tutorial
 

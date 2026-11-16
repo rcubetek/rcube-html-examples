@@ -8,6 +8,7 @@ import { languages, customComponents } from "./advanced";
 import { richText, rememberView } from "./latest";
 import { stylesThemes } from "./styles";
 import { useAnywhere } from "./anywhere";
+import { websites } from "./websites";
 
 export const examples = {
   introduction,
@@ -38,5 +39,6 @@ export const examples = {
   tree,
   "tree-explorer": treeExplorer,
   languages,
+  websites,
   "custom-components": customComponents,
 };

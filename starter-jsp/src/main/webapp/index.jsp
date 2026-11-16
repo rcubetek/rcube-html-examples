@@ -61,6 +61,7 @@
     <ul>
       <li><a href="examples/languages.jsp">Languages</a> — Write @keys instead of text and switch the whole form between languages.</li>
       <li><a href="examples/custom-components.jsp">Custom components</a> — Add your own React component and use it in schemas by name.</li>
+      <li><a href="examples/websites.jsp">Websites &amp; pre-rendering</a> — Whole static websites from data: regions, the render modes server / static / client, mixing them, and drawing pages ahead of time with rcube-html render.</li>
     </ul>
   </main>
 </body>

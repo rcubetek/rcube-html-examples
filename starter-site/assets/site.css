@@ -1,0 +1,23 @@
+/* The site's look. rcube-html/styles.css gives the fields, buttons, accordion and dark mode (data-rc-theme="dark"). */
+body { margin: 0; font-family: system-ui, sans-serif; background: var(--rc-body-bg); color: var(--rc-body-color); line-height: 1.6; }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+.site-header { position: sticky; top: 0; background: var(--rc-body-bg); border-bottom: 1px solid var(--rc-border-color); z-index: 10; }
+.bar { display: flex; align-items: center; gap: 16px; min-height: 56px; }
+.brand { font-weight: 700; text-decoration: none; color: inherit; margin-right: auto; }
+.nav { display: flex; gap: 16px; }
+.nav a { color: inherit; text-decoration: none; }
+.nav a[aria-current="page"] { color: var(--rc-primary); font-weight: 600; }
+.theme-toggle, .menu-toggle { border: 1px solid var(--rc-border-color); background: none; color: inherit; border-radius: 8px; padding: 4px 10px; cursor: pointer; }
+.menu-toggle { display: none; }
+main { padding-top: 32px; padding-bottom: 32px; }
+.lead { font-size: 1.15rem; color: var(--rc-secondary-color); }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.card { border: 1px solid var(--rc-border-color); border-radius: 12px; padding: 16px; }
+.news { padding-bottom: 32px; }
+.muted { color: var(--rc-secondary-color); }
+.site-footer { border-top: 1px solid var(--rc-border-color); padding: 16px 0; font-size: .9rem; color: var(--rc-secondary-color); }
+@media (max-width: 640px) {
+  .menu-toggle { display: inline-block; }
+  .nav { display: none; position: absolute; top: 56px; left: 0; right: 0; flex-direction: column; padding: 12px 16px; background: var(--rc-body-bg); border-bottom: 1px solid var(--rc-border-color); }
+  .site-header.is-open .nav { display: flex; }
+}

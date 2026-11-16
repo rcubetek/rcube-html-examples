@@ -29,6 +29,7 @@ export const introduction = {
         "**Vue 3** — `starter-vue`: Node.js 20.19+ or 22.12+; `npm install`, `npm run dev`, then http://localhost:5173.",
         "**Plain HTML / JavaScript** — `starter-html`: nothing to install; open `index.html` in the browser.",
         "**JSP** — `starter-jsp`: Java 17+ and Maven; `mvn jetty:run`, then http://localhost:8080 (or `mvn package` for a .war).",
+        "**A whole website** — `starter-site`: three pages drawn from data files, with the render modes server, static and client; open `index.html`, then `npx rcube-html render .` (see Websites & pre-rendering).",
         "Get the folder in one of the ways below — no file download needed, so they also work on work computers that block downloads.",
       ],
       links: [
@@ -37,12 +38,13 @@ export const introduction = {
         { href: "https://github.com/rcubesystem/rcube-html-examples/tree/main/starter-vue", label: "Vue" },
         { href: "https://github.com/rcubesystem/rcube-html-examples/tree/main/starter-html", label: "HTML" },
         { href: "https://github.com/rcubesystem/rcube-html-examples/tree/main/starter-jsp", label: "JSP" },
+        { href: "https://github.com/rcubesystem/rcube-html-examples/tree/main/starter-site", label: "Website" },
       ],
     },
     {
       heading: "Way 1: with git",
       body: [
-        "If git is installed, copy only the starter's folder (a sparse checkout skips the rest of the repository), then install and start it. For another framework, write its folder instead of `starter` (`starter-angular`, `starter-vue`, `starter-html`, `starter-jsp`) and run it as its line above says:",
+        "If git is installed, copy only the starter's folder (a sparse checkout skips the rest of the repository), then install and start it. For another framework, write its folder instead of `starter` (`starter-angular`, `starter-vue`, `starter-html`, `starter-jsp`, `starter-site`) and run it as its line above says:",
       ],
       code: "git clone --depth 1 --filter=blob:none --sparse https://github.com/rcubesystem/rcube-html-examples.git\ncd rcube-html-examples\ngit sparse-checkout set starter\ncd starter\nnpm install\nnpm run dev",
     },

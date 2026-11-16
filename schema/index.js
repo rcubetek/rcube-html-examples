@@ -29,6 +29,7 @@ import * as tree from "./tree";
 import * as treeExplorer from "./tree-explorer";
 import * as languages from "./languages";
 import * as customComponents from "./custom-components";
+import * as websites from "./websites";
 
 export const schemas = {
   "introduction": introduction,
@@ -60,4 +61,5 @@ export const schemas = {
   "tree-explorer": treeExplorer,
   "languages": languages,
   "custom-components": customComponents,
+  "websites": websites,
 };

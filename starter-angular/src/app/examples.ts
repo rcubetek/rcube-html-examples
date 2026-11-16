@@ -184,6 +184,12 @@ export const examples: { slug: string; group: string; title: string; summary: st
     "group": "Advanced",
     "title": "Custom components",
     "summary": "Add your own React component and use it in schemas by name."
+  },
+  {
+    "slug": "websites",
+    "group": "Advanced",
+    "title": "Websites & pre-rendering",
+    "summary": "Whole static websites from data: regions, the render modes server / static / client, mixing them, and drawing pages ahead of time with rcube-html render."
   }
 ];
 
@@ -218,4 +224,5 @@ export const exampleRoutes: Routes = [
   { path: "tree-explorer", loadComponent: () => import("./examples/tree-explorer.component").then((m) => m.TreeExplorerComponent) },
   { path: "languages", loadComponent: () => import("./examples/languages.component").then((m) => m.LanguagesComponent) },
   { path: "custom-components", loadComponent: () => import("./examples/custom-components.component").then((m) => m.CustomComponentsComponent) },
+  { path: "websites", loadComponent: () => import("./examples/websites.component").then((m) => m.WebsitesComponent) },
 ];

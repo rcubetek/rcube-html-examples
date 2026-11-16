@@ -41,4 +41,5 @@ export const examples = [
   { ...{"slug":"tree-explorer","group":"Data components","title":"File explorer (lazy loading)","summary":"An S3-style explorer: folders load from an API page by page as you scroll, with server search."}, component: defineAsyncComponent(() => import("./examples/TreeExplorer.vue")) },
   { ...{"slug":"languages","group":"Advanced","title":"Languages","summary":"Write @keys instead of text and switch the whole form between languages."}, component: defineAsyncComponent(() => import("./examples/Languages.vue")) },
   { ...{"slug":"custom-components","group":"Advanced","title":"Custom components","summary":"Add your own React component and use it in schemas by name."}, component: defineAsyncComponent(() => import("./examples/CustomComponents.vue")) },
+  { ...{"slug":"websites","group":"Advanced","title":"Websites & pre-rendering","summary":"Whole static websites from data: regions, the render modes server / static / client, mixing them, and drawing pages ahead of time with rcube-html render."}, component: defineAsyncComponent(() => import("./examples/Websites.vue")) },
 ];

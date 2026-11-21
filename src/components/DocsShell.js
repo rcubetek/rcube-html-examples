@@ -33,6 +33,12 @@ export default function DocsShell({ children }) {
         <Sidebar open={menuOpen} />
         <main className="docs-main">
           <div className="docs-content">{children}</div>
+          {/* Which rcube-html and which site version this is, and when it was published (written by next.config.js) */}
+          {process.env.NEXT_PUBLIC_BUILD_INFO && (
+            <footer className="docs-footer small text-body-secondary border-top" title={process.env.NEXT_PUBLIC_BUILD_INFO_TITLE || undefined}>
+              {process.env.NEXT_PUBLIC_BUILD_INFO}
+            </footer>
+          )}
         </main>
       </div>
     </>

@@ -59,6 +59,8 @@ body {
   padding: 1.5rem 2rem 4rem;
 }
 .docs-content { max-width: 1150px; }
+/* the version and publish date under every page */
+.docs-footer { max-width: 1150px; margin-top: 3rem; padding-top: .75rem; }
 
 /* Code */
 /* a read-only code editor (CodeMirror): white, in a bordered box, with the language and a Copy button on top */

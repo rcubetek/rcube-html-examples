@@ -20,7 +20,7 @@ export const useAnywhere = {
       ],
       list: [
         "**React, Angular, Vue, Svelte, any bundler, Node servers** — npm: `npm install rcube-html`.",
-        "**Plain HTML, PHP, ASP.NET, Django, a CMS** — the CDN, `https://cdn.jsdelivr.net/npm/rcube-html@0.8.0/dist/browser/rcube-html.js` (or unpkg.com), or the two files of `dist/browser/` copied to your static folder (the HTML starter has them).",
+        "**Plain HTML, PHP, ASP.NET, Django, a CMS** — the CDN, `https://cdn.jsdelivr.net/npm/rcube-html@0.9.1/dist/browser/rcube-html.js` (or unpkg.com), or the two files of `dist/browser/` copied to your static folder (the HTML starter has them).",
         "**Java / JSP** — the files of `dist/browser/` and `integrations/jsp/rcube-form.tag` copied into the web app (the JSP starter has them); or the WebJar `org.webjars.npm:rcube-html` once it's deployed at webjars.org.",
         "**Work computers that block downloads** — `npm install`, `git` or `npx degit` (see Introduction); the HTML and JSP starters need no npm at all.",
       ],
@@ -45,7 +45,7 @@ export const useAnywhere = {
   <p>Loading the form…</p>
 </rcube-form>
 
-<script src="https://cdn.jsdelivr.net/npm/rcube-html@0.8.0/dist/browser/rcube-html.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/rcube-html@0.9.1/dist/browser/rcube-html.js"></script>
 <script>
   // the actions the schema names, each called as (event, context, api)
   window.signupActions = {

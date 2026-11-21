@@ -40,4 +40,4 @@ Or write the schema as JSON in the page, which is what a server page does:
 </rcube-form>
 ```
 
-CDN: `https://cdn.jsdelivr.net/npm/rcube-html@0.8.0/dist/browser/rcube-html.js` (or `unpkg.com/rcube-html@0.8.0/…`).
+CDN: `https://cdn.jsdelivr.net/npm/rcube-html@0.9.1/dist/browser/rcube-html.js` (or `unpkg.com/rcube-html@0.9.1/…`).

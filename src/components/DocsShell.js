@@ -26,7 +26,7 @@ export default function DocsShell({ children }) {
         </div>
         <div className="d-flex gap-3 small">
           <a href="https://www.npmjs.com/package/rcube-html" target="_blank" rel="noreferrer">npm</a>
-          <a href="https://github.com/rcubesystem/rcube-html" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://github.com/rcubetek/rcube-html" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </header>
       <div className="d-flex">

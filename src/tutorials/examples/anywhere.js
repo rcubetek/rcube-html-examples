@@ -27,7 +27,7 @@ export const useAnywhere = {
       links: [
         { href: "https://www.npmjs.com/package/rcube-html", label: "rcube-html on npm" },
         { href: "https://www.jsdelivr.com/package/npm/rcube-html", label: "CDN (jsDelivr)" },
-        { href: "https://github.com/rcubesystem/rcube-html-examples", label: "Starters on GitHub" },
+        { href: "https://github.com/rcubetek/rcube-html-examples", label: "Starters on GitHub" },
       ],
     },
     {

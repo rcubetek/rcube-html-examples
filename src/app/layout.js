@@ -33,7 +33,7 @@ const STRUCTURED_DATA = {
       "@type": "SoftwareSourceCode",
       name: "rcube-html",
       description: "A schema-driven form and layout engine: describe rows, columns, fields and buttons as JSON and it renders them, in React, Angular, Vue, plain JavaScript and server-rendered pages (JSP, PHP, .NET).",
-      codeRepository: "https://github.com/rcubesystem/rcube-html",
+      codeRepository: "https://github.com/rcubetek/rcube-html",
       programmingLanguage: "JavaScript",
       runtimePlatform: ["React", "Angular", "Vue", "Web browser", "Java (JSP)"],
       license: "https://opensource.org/licenses/MIT",

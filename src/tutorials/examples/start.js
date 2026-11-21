@@ -33,12 +33,12 @@ export const introduction = {
         "Get the folder in one of the ways below — no file download needed, so they also work on work computers that block downloads.",
       ],
       links: [
-        { href: "https://github.com/rcubesystem/rcube-html-examples/tree/main/starter", label: "React" },
-        { href: "https://github.com/rcubesystem/rcube-html-examples/tree/main/starter-angular", label: "Angular" },
-        { href: "https://github.com/rcubesystem/rcube-html-examples/tree/main/starter-vue", label: "Vue" },
-        { href: "https://github.com/rcubesystem/rcube-html-examples/tree/main/starter-html", label: "HTML" },
-        { href: "https://github.com/rcubesystem/rcube-html-examples/tree/main/starter-jsp", label: "JSP" },
-        { href: "https://github.com/rcubesystem/rcube-html-examples/tree/main/starter-site", label: "Website" },
+        { href: "https://github.com/rcubetek/rcube-html-examples/tree/main/starter", label: "React" },
+        { href: "https://github.com/rcubetek/rcube-html-examples/tree/main/starter-angular", label: "Angular" },
+        { href: "https://github.com/rcubetek/rcube-html-examples/tree/main/starter-vue", label: "Vue" },
+        { href: "https://github.com/rcubetek/rcube-html-examples/tree/main/starter-html", label: "HTML" },
+        { href: "https://github.com/rcubetek/rcube-html-examples/tree/main/starter-jsp", label: "JSP" },
+        { href: "https://github.com/rcubetek/rcube-html-examples/tree/main/starter-site", label: "Website" },
       ],
     },
     {
@@ -46,14 +46,14 @@ export const introduction = {
       body: [
         "If git is installed, copy only the starter's folder (a sparse checkout skips the rest of the repository), then install and start it. For another framework, write its folder instead of `starter` (`starter-angular`, `starter-vue`, `starter-html`, `starter-jsp`, `starter-site`) and run it as its line above says:",
       ],
-      code: "git clone --depth 1 --filter=blob:none --sparse https://github.com/rcubesystem/rcube-html-examples.git\ncd rcube-html-examples\ngit sparse-checkout set starter\ncd starter\nnpm install\nnpm run dev",
+      code: "git clone --depth 1 --filter=blob:none --sparse https://github.com/rcubetek/rcube-html-examples.git\ncd rcube-html-examples\ngit sparse-checkout set starter\ncd starter\nnpm install\nnpm run dev",
     },
     {
       heading: "Way 2: with npm only (no git)",
       body: [
-        "`degit` (run through npx) copies a starter's folder from GitHub into a new folder, without git (here the React one; `rcubesystem/rcube-html-examples/starter-vue` and so on for the others):",
+        "`degit` (run through npx) copies a starter's folder from GitHub into a new folder, without git (here the React one; `rcubetek/rcube-html-examples/starter-vue` and so on for the others):",
       ],
-      code: "npx degit rcubesystem/rcube-html-examples/starter rcube-html-starter\ncd rcube-html-starter\nnpm install\nnpm run dev",
+      code: "npx degit rcubetek/rcube-html-examples/starter rcube-html-starter\ncd rcube-html-starter\nnpm install\nnpm run dev",
     },
     {
       heading: "Way 3: make the same app yourself",

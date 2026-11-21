@@ -44,7 +44,7 @@ downloads. Write the starter's folder instead of `starter` for the others:
 **With git** (copies only that folder):
 
 ```bash
-git clone --depth 1 --filter=blob:none --sparse https://github.com/rcubesystem/rcube-html-examples.git
+git clone --depth 1 --filter=blob:none --sparse https://github.com/rcubetek/rcube-html-examples.git
 cd rcube-html-examples
 git sparse-checkout set starter
 cd starter
@@ -55,7 +55,7 @@ npm run dev
 **With npm only** (no git):
 
 ```bash
-npx degit rcubesystem/rcube-html-examples/starter rcube-html-starter
+npx degit rcubetek/rcube-html-examples/starter rcube-html-starter
 cd rcube-html-starter
 npm install
 npm run dev

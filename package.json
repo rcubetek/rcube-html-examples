@@ -1,6 +1,6 @@
 {
   "name": "rcube-html-examples",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": true,
   "description": "Tutorials and copy-ready examples for rcube-html — forms, tables, charts, calendar, file upload, trees and more — in React, Angular, Vue, plain HTML and JSP.",
   "keywords": [

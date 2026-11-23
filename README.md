@@ -1,6 +1,6 @@
 # rcube-html examples
 
-**Examples for rcube-html: An Open-Source, JSON-Driven HTML Page Renderer.**
+**Examples for rcube-html: A Free, JSON-Driven HTML Page Renderer.**
 
 Tutorials and copy-ready examples for [rcube-html](https://www.npmjs.com/package/rcube-html), a schema-driven form and layout engine: describe rows, columns, fields and buttons as JSON-like objects, and it renders them — with built-in validation, conditional and dependent fields, input masks, repeatable entries, runtime changes and multi-language text. Use it natively in React, or as the `<rcube-form>` web component in Angular, Vue, plain JavaScript, and server-rendered pages (JSP, PHP, .NET). It ships with its own components and stylesheet — no framework lock-in — and works with any CSS framework, including Bootstrap.
 

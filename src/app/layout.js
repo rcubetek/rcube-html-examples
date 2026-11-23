@@ -36,7 +36,7 @@ const STRUCTURED_DATA = {
       codeRepository: "https://github.com/rcubetek/rcube-html",
       programmingLanguage: "JavaScript",
       runtimePlatform: ["React", "Angular", "Vue", "Web browser", "Java (JSP)"],
-      license: "https://opensource.org/licenses/MIT",
+      license: "https://github.com/rcubetek/rcube-html/blob/main/LICENSE.md",
       keywords: SITE_TAGS.join(", "),
       url: "https://www.npmjs.com/package/rcube-html",
     },

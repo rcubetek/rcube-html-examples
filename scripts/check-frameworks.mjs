@@ -3,8 +3,9 @@
 //     drawn, the page script has no errors, onLoad code runs
 //   - JSP: the page as the tag would write it (the JSON from WEB-INF/schemas, the \${…} escapes read back) runs too
 //   - Angular / Vue: the code is made for each one (their builds check them: starter-angular, starter-vue)
-// Needs jsdom, which rcube-html's own tests install: run from this repository next to ../rcube-html, or install jsdom.
-import { readFileSync } from "node:fs";
+// Needs jsdom, which rcube-html's own tests install: rcube-html beside this repository (../rcube-html) or in the RCube
+// workspace's lib folder (../../lib/rcube-html, when this site is in rcube/sites), or install jsdom.
+import { existsSync, readFileSync } from "node:fs";
 import { createRequire, register } from "node:module";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -19,7 +20,9 @@ let JSDOM;
 try {
   ({ JSDOM } = createRequire(import.meta.url)("jsdom"));
 } catch {
-  ({ JSDOM } = createRequire(path.join(root, "../rcube-html/package.json"))("jsdom"));
+  const lib = ["../rcube-html", "../../lib/rcube-html"].map((dir) => path.join(root, dir, "package.json")).find((file) => existsSync(file));
+  if (!lib) throw new Error("jsdom is needed: npm install jsdom, or keep rcube-html (with its node_modules) in ../rcube-html or ../../lib/rcube-html");
+  ({ JSDOM } = createRequire(lib)("jsdom"));
 }
 const browserDir = path.join(root, "node_modules/rcube-html/dist/browser");
 const libScript = (file) => readFileSync(path.join(browserDir, file), "utf8");
